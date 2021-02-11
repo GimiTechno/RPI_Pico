@@ -42,13 +42,13 @@ static inline void resistor_dac_5bit_program_init(PIO pio, uint sm, uint offset,
     pio_sm_config c = resistor_dac_5bit_program_get_default_config(offset);
     sm_config_set_out_pins(&c, pin_base, 5);
     // Shift to right, autopull threshold 5
-    sm_config_set_out_shift(&c, true, true, 5);
+    sm_config_set_out_shift(&c, TRUE, TRUE, 5);
     // Deeper FIFO as we're not doing any RX
     sm_config_set_fifo_join(&c, PIO_FIFO_JOIN_TX);
     float div = (float)clock_get_hz(clk_sys) / sample_rate_hz;
     sm_config_set_clkdiv(&c, div);
     pio_sm_init(pio, sm, offset, &c);
-    pio_sm_set_enabled(pio, sm, true);
+    pio_sm_set_enabled(pio, sm, TRUE);
 }
 
 #endif

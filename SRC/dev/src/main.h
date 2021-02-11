@@ -18,6 +18,8 @@
 /*************** DRV Include ***************/
 // Common
 #include "drv/common.h"
+// Clock
+#include "drv/CLK/clk.h"
 // WDT
 #include "drv/WDT/wdt.h"
 // Timer
@@ -45,7 +47,7 @@
 /*******************************************/
 
 // Sys
-#define SYSTEM_INIT_WAIT_MS    500                  /* System H/W Init Wait Time ms) */
+#define SYSTEM_INIT_WAIT_MS    100                  /* System H/W Init Wait Time(ms) */
 #define TIMER_1MS              1000                 /* 1ms Timer */
 
 // LED

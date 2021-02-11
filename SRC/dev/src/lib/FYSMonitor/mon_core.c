@@ -186,7 +186,7 @@ static void mon_ramentimer(void)
 {
     printf("RAMEN TIMER START(3 Min)!!!!!!\n");
 #ifdef __RPI_PICO__
-    timer_set_us(180 * 1000000);
+    Timer_Set_us(180 * 1000000);
 #endif
 }
 

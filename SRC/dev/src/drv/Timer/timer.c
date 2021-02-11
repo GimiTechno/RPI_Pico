@@ -20,18 +20,17 @@ static uint64_t get_time(void) {
 static void alarm_in_us(uint32_t delay_us);
 
 // Alarm interrupt handler
-static volatile bool alarm_fired;
+static volatile bool g_timer_alarm_flg = FALSE;
 // APP Set Time(us)
 static uint32_t s_timer_us = 0;
 
 // Timer ISR
-static void isr_timer_irq(void)
+__ISR static void isr_timer0_irq(void)
 {
     // Clear the alarm irq
     hw_clear_bits(&timer_hw->intr, 1u << ALARM_NUM);
-
-    // printf("[DEBUG] : 1ms Timer ISR\n");
-    alarm_fired = true;
+    printf("%dms OneShot Timer Alarm!!!\n",s_timer_us / 1000);
+    g_timer_alarm_flg = TRUE;
 }
 
 static void alarm_in_us(uint32_t delay_us)
@@ -39,9 +38,9 @@ static void alarm_in_us(uint32_t delay_us)
     // Enable the interrupt for our alarm (the timer outputs 4 alarm irqs)
     hw_set_bits(&timer_hw->inte, 1u << ALARM_NUM);
     // Set irq handler for alarm irq
-    irq_set_exclusive_handler(ALARM_IRQ, isr_timer_irq);
+    irq_set_exclusive_handler(ALARM_IRQ, isr_timer0_irq);
     // Enable the alarm irq
-    irq_set_enabled(ALARM_IRQ, true);
+    irq_set_enabled(ALARM_IRQ, TRUE);
     // Enable interrupt in block and at processor
 
     // Alarm is only 32 bits so if trying to delay more
@@ -54,20 +53,26 @@ static void alarm_in_us(uint32_t delay_us)
     timer_hw->alarm[ALARM_NUM] = (uint32_t) target;
 }
 
-// us oder timer set
-void timer_set_us(uint32_t ovf_us)
+// us Oder OneShot Timer Set
+void Timer_Set_us(uint32_t ovf_us)
 {
     // Set us Timer
     s_timer_us = ovf_us;
+    g_timer_alarm_flg != FALSE;
 }
 
-void timer_main(void)
+void APP_Timer_Main(void)
 {
     if(s_timer_us != 0)
     {
-        alarm_fired = false;
-        alarm_in_us(s_timer_us);
         // Wait for alarm to fire
-        while (!alarm_fired);
+        if(g_timer_alarm_flg != FALSE)
+        {
+            printf("%dms OneShot Timer Alarm!!!\n",s_timer_us / 1000);
+            g_timer_alarm_flg = FALSE;
+            // restart OneShort Timer
+            alarm_in_us(s_timer_us);
+            printf("OneShot Timer Start!!!\n");
+        }
     }
 }

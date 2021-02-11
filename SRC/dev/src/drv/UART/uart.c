@@ -6,7 +6,7 @@ static int chars_rxed = 0;
 static void isr_uart_rx(void);
 
 // RX interrupt handler
-ISR static void isr_uart_rx(void)
+__ISR static void isr_uart_rx(void)
 {
     while (uart_is_readable(UART_ID)) {
         uint8_t ch = uart_getc(UART_ID);
@@ -36,13 +36,13 @@ void UART_Init(void)
     int actual = uart_set_baudrate(UART_ID, BAUD_RATE);
 
     // Set UART flow control CTS/RTS, we don't want these, so turn them off
-    uart_set_hw_flow(UART_ID, false, false);
+    uart_set_hw_flow(UART_ID, FALSE, FALSE);
 
     // Set our data format
     uart_set_format(UART_ID, DATA_BITS, STOP_BITS, PARITY);
 
     // Turn off FIFO's - we want to do this character by character
-    uart_set_fifo_enabled(UART_ID, false);
+    uart_set_fifo_enabled(UART_ID, FALSE);
 
     // Set up a RX interrupt
     // We need to set up the handler first
@@ -51,8 +51,8 @@ void UART_Init(void)
 
     // And set up and enable the interrupt handlers
     irq_set_exclusive_handler(UART_IRQ, isr_uart_rx);
-    irq_set_enabled(UART_IRQ, true);
+    irq_set_enabled(UART_IRQ, TRUE);
 
     // Now enable the UART to send interrupts - RX only
-    uart_set_irq_enables(UART_ID, true, false);
+    uart_set_irq_enables(UART_ID, TRUE, FALSE);
 }

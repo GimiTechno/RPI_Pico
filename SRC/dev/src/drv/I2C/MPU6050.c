@@ -12,8 +12,8 @@ static void mpu6050_read_raw(int16_t *p_accel, int16_t *p_gyro, int16_t *temp)
 
     // Start reading acceleration registers from register 0x3B for 6 bytes
     uint8_t val = 0x3B;
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_MPU6050, &val, sizeof(val), true); // true to keep master control of bus
-    i2c_read_blocking(I2C_PORT, I2C_ADDR_MPU6050, buffer, sizeof(buffer), false);
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_MPU6050, &val, sizeof(val), TRUE); // TRUE to keep master control of bus
+    i2c_read_blocking(I2C_PORT, I2C_ADDR_MPU6050, buffer, sizeof(buffer), FALSE);
 
     for (int i = 0; i < 3; i++) {
         *p_accel[i] = (buffer[i * 2] << 8 | buffer[(i * 2) + 1]);
@@ -22,8 +22,8 @@ static void mpu6050_read_raw(int16_t *p_accel, int16_t *p_gyro, int16_t *temp)
     // Now p_gyro data from reg 0x43 for 6 bytes
     // The register is auto incrementing on each read
     val = 0x43;
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_MPU6050, &val, sizeof(val), true);
-    i2c_read_blocking(I2C_PORT, I2C_ADDR_MPU6050, buffer, sizeof(buffer), false);  // False - finished with bus
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_MPU6050, &val, sizeof(val), TRUE);
+    i2c_read_blocking(I2C_PORT, I2C_ADDR_MPU6050, buffer, sizeof(buffer), FALSE);  // FALSE - finished with bus
 
     for (int i = 0; i < 3; i++) {
         *p_gyro[i] = (buffer[i * 2] << 8 | buffer[(i * 2) + 1]);;
@@ -32,8 +32,8 @@ static void mpu6050_read_raw(int16_t *p_accel, int16_t *p_gyro, int16_t *temp)
     // Now temperature from reg 0x41 for 2 bytes
     // The register is auto incrementing on each read
     val = 0x41;
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_MPU6050, &val, sizeof(val), true);
-    i2c_read_blocking(I2C_PORT, I2C_ADDR_MPU6050, buffer, 2, false);  // False - finished with bus
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_MPU6050, &val, sizeof(val), TRUE);
+    i2c_read_blocking(I2C_PORT, I2C_ADDR_MPU6050, buffer, 2, FALSE);  // FALSE - finished with bus
 
     *temp = buffer[0] << 8 | buffer[1];
 }
@@ -44,7 +44,7 @@ void mpu6050_init( void )
     // There are a load more options to set up the device in different ways that could be added here
     uint8_t buf[2] = {0x6B, 0x00};
 
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_MPU6050, buf, sizeof(buf), false);
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_MPU6050, buf, sizeof(buf), FALSE);
 }
 
 void mpu6050_read(void)

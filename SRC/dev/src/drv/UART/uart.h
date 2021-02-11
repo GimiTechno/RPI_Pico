@@ -1,11 +1,14 @@
 #ifndef __UART_H__
 #define __UART_H__
 
-#include "pico/stdlib.h"
-#include "hardware/uart.h"
+// SDK
 #include "hardware/irq.h"
+#include "hardware/uart.h"
+#include "pico/stdlib.h"
 
-#define ISR
+// APP
+#include "../../drv/common.h"
+
 #define UART_ID uart0
 #define BAUD_RATE 115200
 #define DATA_BITS 8

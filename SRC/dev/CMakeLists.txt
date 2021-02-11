@@ -6,7 +6,8 @@ pico_sdk_init()
 
 add_executable(dev_20210206
     # Driver
-    src/drv/PIO/pio_dac.c
+    src/drv/CLK/clk.c
+    # src/drv/PIO/pio_dac.c
     src/drv/ADC/adc.c
     src/drv/PWM/pwm.c
     src/drv/Timer/timer.c

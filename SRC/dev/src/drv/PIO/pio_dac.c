@@ -7,7 +7,7 @@ static uint s_offset;
 void PIO_DAC_Init(void)
 {
     s_pio = pio0;
-    s_sm = pio_claim_unused_sm(pio0, true);
+    s_sm = pio_claim_unused_sm(pio0, TRUE);
     s_offset = pio_add_program(pio0, &resistor_dac_5bit_program);
 
     resistor_dac_5bit_program_init(pio0, s_sm, s_offset,
@@ -18,7 +18,7 @@ void PIO_DAC_Init(void)
 void PIO_DAC_Main(void)
 {
 
-    while (true) {
+    while (TRUE) {
         // Triangle wave
         for (int i = 0; i < (1 << SAMPLE_WIDTH); ++i)
             pio_sm_put_blocking(s_pio, s_sm, i);

@@ -1,11 +1,13 @@
 #ifndef __SPI_H__
 #define __SPI_H__
 
-#include <stdio.h>
-#include <stdlib.h>
+// SDK
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
 #include "hardware/dma.h"
+
+// APP
+#include "../../drv/common.h"
 
 #define PIN_MISO 16
 #define PIN_CS   17

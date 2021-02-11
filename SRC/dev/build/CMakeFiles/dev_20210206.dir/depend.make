@@ -1832,6 +1832,7 @@ CMakeFiles/dev_20210206.dir/home/fyuto/pico/pico-sdk/src/rp2_common/pico_stdlib/
 
 CMakeFiles/dev_20210206.dir/src/drv/ADC/adc.c.obj: ../src/drv/ADC/adc.c
 CMakeFiles/dev_20210206.dir/src/drv/ADC/adc.c.obj: ../src/drv/ADC/adc.h
+CMakeFiles/dev_20210206.dir/src/drv/ADC/adc.c.obj: ../src/drv/common.h
 CMakeFiles/dev_20210206.dir/src/drv/ADC/adc.c.obj: /home/fyuto/pico/pico-sdk/src/boards/include/boards/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/ADC/adc.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/ADC/adc.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -1869,9 +1870,49 @@ CMakeFiles/dev_20210206.dir/src/drv/ADC/adc.c.obj: /home/fyuto/pico/pico-sdk/src
 CMakeFiles/dev_20210206.dir/src/drv/ADC/adc.c.obj: generated/pico_base/pico/config_autogen.h
 CMakeFiles/dev_20210206.dir/src/drv/ADC/adc.c.obj: generated/pico_base/pico/version.h
 
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: ../src/drv/CLK/clk.c
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: ../src/drv/CLK/clk.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: ../src/drv/common.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/boards/include/boards/pico.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/config.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/error.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/types.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_time/include/pico/time.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: generated/pico_base/pico/config_autogen.h
+CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj: generated/pico_base/pico/version.h
+
 CMakeFiles/dev_20210206.dir/src/drv/I2C/DS3231.c.obj: ../src/drv/I2C/DS3231.c
 CMakeFiles/dev_20210206.dir/src/drv/I2C/DS3231.c.obj: ../src/drv/I2C/DS3231.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/DS3231.c.obj: ../src/drv/I2C/i2c.h
+CMakeFiles/dev_20210206.dir/src/drv/I2C/DS3231.c.obj: ../src/drv/common.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/DS3231.c.obj: /home/fyuto/pico/pico-sdk/src/boards/include/boards/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/DS3231.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/DS3231.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -1912,6 +1953,7 @@ CMakeFiles/dev_20210206.dir/src/drv/I2C/DS3231.c.obj: generated/pico_base/pico/v
 CMakeFiles/dev_20210206.dir/src/drv/I2C/LCD1602_I2C.c.obj: ../src/drv/I2C/LCD1602_I2C.c
 CMakeFiles/dev_20210206.dir/src/drv/I2C/LCD1602_I2C.c.obj: ../src/drv/I2C/LCD1602_I2C.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/LCD1602_I2C.c.obj: ../src/drv/I2C/i2c.h
+CMakeFiles/dev_20210206.dir/src/drv/I2C/LCD1602_I2C.c.obj: ../src/drv/common.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/LCD1602_I2C.c.obj: /home/fyuto/pico/pico-sdk/src/boards/include/boards/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/LCD1602_I2C.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/LCD1602_I2C.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -1951,6 +1993,7 @@ CMakeFiles/dev_20210206.dir/src/drv/I2C/LCD1602_I2C.c.obj: generated/pico_base/p
 
 CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.obj: ../src/drv/I2C/i2c.c
 CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.obj: ../src/drv/I2C/i2c.h
+CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.obj: ../src/drv/common.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.obj: /home/fyuto/pico/pico-sdk/src/boards/include/boards/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -1987,48 +2030,6 @@ CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.obj: /home/fyuto/pico/pico-sdk/src
 CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.obj: generated/pico_base/pico/config_autogen.h
 CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.obj: generated/pico_base/pico/version.h
-
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: ../src/drv/PIO/pio_dac.c
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: ../src/drv/PIO/pio_dac.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: ../src/drv/PIO/resistor_dac.pio.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: ../src/drv/common.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/boards/include/boards/pico.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/config.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/error.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/types.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_time/include/pico/time.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_uart/include/hardware/uart.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: generated/pico_base/pico/config_autogen.h
-CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj: generated/pico_base/pico/version.h
 
 CMakeFiles/dev_20210206.dir/src/drv/PWM/pwm.c.obj: ../src/drv/PWM/pwm.c
 CMakeFiles/dev_20210206.dir/src/drv/PWM/pwm.c.obj: ../src/drv/PWM/pwm.h
@@ -2072,6 +2073,7 @@ CMakeFiles/dev_20210206.dir/src/drv/PWM/pwm.c.obj: generated/pico_base/pico/vers
 CMakeFiles/dev_20210206.dir/src/drv/SPI/bme280.c.obj: ../src/drv/SPI/bme280.c
 CMakeFiles/dev_20210206.dir/src/drv/SPI/bme280.c.obj: ../src/drv/SPI/bme280.h
 CMakeFiles/dev_20210206.dir/src/drv/SPI/bme280.c.obj: ../src/drv/SPI/spi.h
+CMakeFiles/dev_20210206.dir/src/drv/SPI/bme280.c.obj: ../src/drv/common.h
 CMakeFiles/dev_20210206.dir/src/drv/SPI/bme280.c.obj: /home/fyuto/pico/pico-sdk/src/boards/include/boards/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/SPI/bme280.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/SPI/bme280.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -2111,6 +2113,7 @@ CMakeFiles/dev_20210206.dir/src/drv/SPI/bme280.c.obj: generated/pico_base/pico/v
 
 CMakeFiles/dev_20210206.dir/src/drv/SPI/spi.c.obj: ../src/drv/SPI/spi.c
 CMakeFiles/dev_20210206.dir/src/drv/SPI/spi.c.obj: ../src/drv/SPI/spi.h
+CMakeFiles/dev_20210206.dir/src/drv/SPI/spi.c.obj: ../src/drv/common.h
 CMakeFiles/dev_20210206.dir/src/drv/SPI/spi.c.obj: /home/fyuto/pico/pico-sdk/src/boards/include/boards/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/SPI/spi.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/SPI/spi.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -2150,6 +2153,7 @@ CMakeFiles/dev_20210206.dir/src/drv/SPI/spi.c.obj: generated/pico_base/pico/vers
 
 CMakeFiles/dev_20210206.dir/src/drv/Timer/timer.c.obj: ../src/drv/Timer/timer.c
 CMakeFiles/dev_20210206.dir/src/drv/Timer/timer.c.obj: ../src/drv/Timer/timer.h
+CMakeFiles/dev_20210206.dir/src/drv/Timer/timer.c.obj: ../src/drv/common.h
 CMakeFiles/dev_20210206.dir/src/drv/Timer/timer.c.obj: /home/fyuto/pico/pico-sdk/src/boards/include/boards/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/Timer/timer.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/Timer/timer.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -2185,6 +2189,7 @@ CMakeFiles/dev_20210206.dir/src/drv/Timer/timer.c.obj: generated/pico_base/pico/
 
 CMakeFiles/dev_20210206.dir/src/drv/UART/uart.c.obj: ../src/drv/UART/uart.c
 CMakeFiles/dev_20210206.dir/src/drv/UART/uart.c.obj: ../src/drv/UART/uart.h
+CMakeFiles/dev_20210206.dir/src/drv/UART/uart.c.obj: ../src/drv/common.h
 CMakeFiles/dev_20210206.dir/src/drv/UART/uart.c.obj: /home/fyuto/pico/pico-sdk/src/boards/include/boards/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/UART/uart.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico.h
 CMakeFiles/dev_20210206.dir/src/drv/UART/uart.c.obj: /home/fyuto/pico/pico-sdk/src/common/pico_base/include/pico/assert.h
@@ -2219,6 +2224,7 @@ CMakeFiles/dev_20210206.dir/src/drv/UART/uart.c.obj: generated/pico_base/pico/co
 CMakeFiles/dev_20210206.dir/src/drv/UART/uart.c.obj: generated/pico_base/pico/version.h
 
 CMakeFiles/dev_20210206.dir/src/main.c.obj: ../src/drv/ADC/adc.h
+CMakeFiles/dev_20210206.dir/src/main.c.obj: ../src/drv/CLK/clk.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: ../src/drv/I2C/DS3231.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: ../src/drv/I2C/LCD1602_I2C.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: ../src/drv/I2C/i2c.h
@@ -2263,6 +2269,7 @@ CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h
+CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h
@@ -2275,6 +2282,7 @@ CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h
+CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pll.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h
@@ -2289,6 +2297,7 @@ CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_co
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_irq/include/hardware/irq.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h
+CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_pll/include/hardware/pll.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h
 CMakeFiles/dev_20210206.dir/src/main.c.obj: /home/fyuto/pico/pico-sdk/src/rp2_common/hardware_sync/include/hardware/sync.h
