@@ -1,13 +1,13 @@
 #ifndef __I2C_H__
 #define __I2C_H__
 
-#include <stdio.h>
-#include <string.h>
-#include <stdint.h>
-
+// SDK
 #include "hardware/i2c.h"
 #include "pico/stdlib.h"
 #include "pico/binary_info.h"
+
+// APP
+#include "../../drv/common.h"
 
 #define I2C_PORT            i2c0            /* I2C Port = I2C0 */
 #if 0

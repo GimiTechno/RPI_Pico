@@ -14,7 +14,7 @@ const char *rtc_day_tbl[RTC_DAY+1] = {
 void ds3231_init(RTC_T *rtc_t)
 {
     // uint8_t buf[] = {REG_DAY,SUNDAY};
-    // i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, buf, sizeof(buf), true);
+    // i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, buf, sizeof(buf), TRUE);
 }
 
 void ds3231_read_reg(void)
@@ -27,50 +27,50 @@ void ds3231_read_reg(void)
 
     // Year
     reg = REG_YEARS;
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), true);
-    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), false);
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), TRUE);
+    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), FALSE);
     rtc_t.year = val;
     // printf("20%X/",val);
 
     // Month
     reg = REG_MONTH;
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), true);
-    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), false);
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), TRUE);
+    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), FALSE);
     rtc_t.month = val;
     // printf("%X/",val);
 
     // Date
     reg = REG_DATE;
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), true);
-    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), false);
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), TRUE);
+    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), FALSE);
     rtc_t.date = val;
     // printf("%X ",val);
 
     // Week
     reg = REG_DAY;
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), true);
-    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), false);
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), TRUE);
+    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), FALSE);
     rtc_t.day = val;
     // printf("%s ",rtc_day_tbl[val]);
 
     // Hour
     reg = REG_HOURS;
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), true);
-    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), false);
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), TRUE);
+    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), FALSE);
     rtc_t.hour = val;
     // printf("%X:",val);
 
     // Min
     reg = REG_MINUTES;
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), true);
-    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), false);
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), TRUE);
+    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), FALSE);
     rtc_t.min = val;
     // printf("%X:",val);
 
     // Sec
     reg = REG_SECONDS;
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), true);
-    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), false);
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_DS3231, &reg, sizeof(reg), TRUE);
+    i2c_read_blocking(I2C_PORT, I2C_ADDR_DS3231, &val, sizeof(val), FALSE);
     rtc_t.sec = val;
     // printf("%X\n",val);
 

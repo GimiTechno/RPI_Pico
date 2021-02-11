@@ -51,30 +51,40 @@ static void opn_msg( void )
 #ifdef WDT_ENABLE
     printf("[System Info] : WDT OVF ... %dms\n",WDT_OVF_MS);
 #endif
-    printf("[System Info] : CPUID REG ... 0x%X\n",REG.CPUID.DWORD);
+    printf("[System Info] : CPUID REG ... 0x%X\n",REG.CPUID.WORD);
     printf("************************************************************\n");
 }
 
 static void HW_init( void )
 {
-    binary_info();
     stdio_init_all();
+    binary_info();
 
-    gpio_init(LED_PIN);
-    gpio_set_dir(LED_PIN, GPIO_OUT);
-    PWM_Init();
-
-    ADC_Init();
-    I2C_Init();
-    SPI_Init();
-    UART_Init();
-
-    // 1ms Timer Set
-    // timer_set_us(TIMER_1MS);
+    // SYS CLK = 125MHz 
+    clocks_enable_resus(&Clock_Init);
+    // Wait ClockUP
+    sleep_ms(100);
 
 #ifdef WDT_ENABLE
     // WDT Enable. OVF@ WDT_OVF_MS
     watchdog_enable(WDT_OVF_MS, WDT_DEBUG_DISABLE);
+#endif
+
+    gpio_init(LED_PIN);
+    gpio_set_dir(LED_PIN, GPIO_OUT);
+    PWM_Init();
+    // ADC_Init();
+    I2C_Init();
+    SPI_Init();
+    UART_Init();
+
+#ifdef WDT_ENABLE
+    WDT_TGL;
+#endif
+    // Wait Init
+    sleep_ms(SYSTEM_INIT_WAIT_MS);
+#ifdef WDT_ENABLE
+    WDT_TGL;
 #endif
 }
 
@@ -110,7 +120,7 @@ static void APP_init_0( void )
     // I2C LCD
     // lcd_init();
 
-    ADC_DMA_Start();
+    CLK_Info(PLL_USE_CLOCK_UP);
 
 #ifdef WDT_ENABLE
     WDT_TGL;
@@ -124,17 +134,22 @@ static void APP_init_1( void )
     // PIO_DAC_Init();
 
     // BME280(SPI)湿温度気圧センサ
-    s_chipid = bme280_init();
+    // s_chipid = bme280_init();
+
+    // OneShot Timer Set(1s)
+    printf("OneShot Timer Start!!!\n");
+    Timer_Set_us(TIMER_1MS);
 }
 
 // Core0 App Main
 static void APP_Main_0( void )
 {
     // mon_main();
-
+#if 0
     ds3231_read_reg();
-    sleep_ms(900);
-
+    sleep_ms(950);
+#endif
+    // CLK_Info(PLL_USE_CLOCK_UP);
     // APP_ADC_Main();
     // APP_LCD();
 }
@@ -144,17 +159,17 @@ static void APP_Main_1( void )
 {
     // led_blink();
 
-    // Timer @ 1ms
-    // timer_main();
-
     // DACはSPIとバッティングしてる
     // PIO_DAC_Main();
-
+#if 0
     uart_puts(UART_ID, "\nCore1 Main1 Loop\n");
 
     // BME280(SPI)湿温度気圧センサ
     bme280_main(s_chipid);
     sleep_ms(1000);
+#endif
+    // // OneShort Timer Func
+    APP_Timer_Main();
 }
 
 // Core1 Startup Entry

@@ -24,7 +24,7 @@
 
 #ifdef __RPI_PICO__
 void watchdog_enable(uint32_t delay_ms, bool pause_on_debug);
-extern  void timer_set_us(uint32_t ovf_us);
+extern  void Timer_Set_us(uint32_t ovf_us);
 #endif
 
 #define CMD_MAX         8

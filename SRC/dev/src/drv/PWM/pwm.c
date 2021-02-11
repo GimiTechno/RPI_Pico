@@ -4,7 +4,7 @@
 __ISR void isr_pwm(void)
 {
     static int fade = 0;
-    static bool going_up = true;
+    static bool going_up = TRUE;
 
     // Clear the interrupt flag that brought us here
     pwm_clear_irq(pwm_gpio_to_slice_num(PICO_DEFAULT_LED_PIN));
@@ -13,13 +13,13 @@ __ISR void isr_pwm(void)
         ++fade;
         if (fade > 255) {
             fade = 255;
-            going_up = false;
+            going_up = FALSE;
         }
     } else {
         --fade;
         if (fade < 0) {
             fade = 0;
-            going_up = true;
+            going_up = TRUE;
         }
     }
     // Square the fade value to make the LED's brightness appear more linear
@@ -37,9 +37,9 @@ void PWM_Init(void)
     // Mask our slice's IRQ output into the PWM block's single interrupt line,
     // and register our interrupt handler
     pwm_clear_irq(slice_num);
-    pwm_set_irq_enabled(slice_num, true);
+    pwm_set_irq_enabled(slice_num, TRUE);
     irq_set_exclusive_handler(PWM_IRQ_WRAP, isr_pwm);
-    irq_set_enabled(PWM_IRQ_WRAP, true);
+    irq_set_enabled(PWM_IRQ_WRAP, TRUE);
 
     // Get some sensible defaults for the slice configuration. By default, the
     // counter is allowed to wrap over its maximum range (0 to 2**16-1)
@@ -47,5 +47,5 @@ void PWM_Init(void)
     // Set divider, reduces counter clock to sysclock/this value
     pwm_config_set_clkdiv(&config, 4.f);
     // Load the configuration into our PWM slice, and set it running.
-    pwm_init(slice_num, &config, true);
+    pwm_init(slice_num, &config, TRUE);
 }

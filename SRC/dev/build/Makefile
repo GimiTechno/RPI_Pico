@@ -1894,6 +1894,33 @@ src/drv/ADC/adc.c.s:
 	$(MAKE) -f CMakeFiles/dev_20210206.dir/build.make CMakeFiles/dev_20210206.dir/src/drv/ADC/adc.c.s
 .PHONY : src/drv/ADC/adc.c.s
 
+src/drv/CLK/clk.obj: src/drv/CLK/clk.c.obj
+
+.PHONY : src/drv/CLK/clk.obj
+
+# target to build an object file
+src/drv/CLK/clk.c.obj:
+	$(MAKE) -f CMakeFiles/dev_20210206.dir/build.make CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.obj
+.PHONY : src/drv/CLK/clk.c.obj
+
+src/drv/CLK/clk.i: src/drv/CLK/clk.c.i
+
+.PHONY : src/drv/CLK/clk.i
+
+# target to preprocess a source file
+src/drv/CLK/clk.c.i:
+	$(MAKE) -f CMakeFiles/dev_20210206.dir/build.make CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.i
+.PHONY : src/drv/CLK/clk.c.i
+
+src/drv/CLK/clk.s: src/drv/CLK/clk.c.s
+
+.PHONY : src/drv/CLK/clk.s
+
+# target to generate assembly for a file
+src/drv/CLK/clk.c.s:
+	$(MAKE) -f CMakeFiles/dev_20210206.dir/build.make CMakeFiles/dev_20210206.dir/src/drv/CLK/clk.c.s
+.PHONY : src/drv/CLK/clk.c.s
+
 src/drv/I2C/DS3231.obj: src/drv/I2C/DS3231.c.obj
 
 .PHONY : src/drv/I2C/DS3231.obj
@@ -1974,33 +2001,6 @@ src/drv/I2C/i2c.s: src/drv/I2C/i2c.c.s
 src/drv/I2C/i2c.c.s:
 	$(MAKE) -f CMakeFiles/dev_20210206.dir/build.make CMakeFiles/dev_20210206.dir/src/drv/I2C/i2c.c.s
 .PHONY : src/drv/I2C/i2c.c.s
-
-src/drv/PIO/pio_dac.obj: src/drv/PIO/pio_dac.c.obj
-
-.PHONY : src/drv/PIO/pio_dac.obj
-
-# target to build an object file
-src/drv/PIO/pio_dac.c.obj:
-	$(MAKE) -f CMakeFiles/dev_20210206.dir/build.make CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.obj
-.PHONY : src/drv/PIO/pio_dac.c.obj
-
-src/drv/PIO/pio_dac.i: src/drv/PIO/pio_dac.c.i
-
-.PHONY : src/drv/PIO/pio_dac.i
-
-# target to preprocess a source file
-src/drv/PIO/pio_dac.c.i:
-	$(MAKE) -f CMakeFiles/dev_20210206.dir/build.make CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.i
-.PHONY : src/drv/PIO/pio_dac.c.i
-
-src/drv/PIO/pio_dac.s: src/drv/PIO/pio_dac.c.s
-
-.PHONY : src/drv/PIO/pio_dac.s
-
-# target to generate assembly for a file
-src/drv/PIO/pio_dac.c.s:
-	$(MAKE) -f CMakeFiles/dev_20210206.dir/build.make CMakeFiles/dev_20210206.dir/src/drv/PIO/pio_dac.c.s
-.PHONY : src/drv/PIO/pio_dac.c.s
 
 src/drv/PWM/pwm.obj: src/drv/PWM/pwm.c.obj
 
@@ -2368,6 +2368,9 @@ help:
 	@echo "... src/drv/ADC/adc.obj"
 	@echo "... src/drv/ADC/adc.i"
 	@echo "... src/drv/ADC/adc.s"
+	@echo "... src/drv/CLK/clk.obj"
+	@echo "... src/drv/CLK/clk.i"
+	@echo "... src/drv/CLK/clk.s"
 	@echo "... src/drv/I2C/DS3231.obj"
 	@echo "... src/drv/I2C/DS3231.i"
 	@echo "... src/drv/I2C/DS3231.s"
@@ -2377,9 +2380,6 @@ help:
 	@echo "... src/drv/I2C/i2c.obj"
 	@echo "... src/drv/I2C/i2c.i"
 	@echo "... src/drv/I2C/i2c.s"
-	@echo "... src/drv/PIO/pio_dac.obj"
-	@echo "... src/drv/PIO/pio_dac.i"
-	@echo "... src/drv/PIO/pio_dac.s"
 	@echo "... src/drv/PWM/pwm.obj"
 	@echo "... src/drv/PWM/pwm.i"
 	@echo "... src/drv/PWM/pwm.s"

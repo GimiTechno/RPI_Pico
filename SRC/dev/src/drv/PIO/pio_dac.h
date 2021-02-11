@@ -1,13 +1,16 @@
 #ifndef __PIO_DAC_H__
 #define __PIO_DAC_H__
 
-#include "../../drv/common.h"
-
-#include <stdio.h>
+// SDK
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
 
+// APP
+#include "../../drv/common.h"
+
+// ASM
 #include "resistor_dac.pio.h"
+
 // ----------------------------------------------------------------------------
 // Code for driving the "DAC" output for us to measure
 

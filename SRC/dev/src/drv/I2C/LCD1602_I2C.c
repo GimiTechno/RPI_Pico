@@ -7,7 +7,7 @@ static void lcd_toggle_enable(uint8_t val);
 /* Quick helper function for single byte transfers */
 static void i2c_write_byte(uint8_t val)
 {
-    i2c_write_blocking(I2C_PORT, I2C_ADDR_PCF8574A, &val, 1, false);
+    i2c_write_blocking(I2C_PORT, I2C_ADDR_PCF8574A, &val, 1, FALSE);
 }
 
 static void lcd_toggle_enable(uint8_t val)

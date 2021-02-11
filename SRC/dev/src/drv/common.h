@@ -10,12 +10,18 @@
 
 #define __ISR
 
-struct st_io {                       /* struct IO    */
-    union {                          /* CPUID         */
-        uint32_t DWORD;              /*  4Byte Access */
-        uint32_t WORD;               /*  Word Access */
-        uint32_t BYTE;               /*  Byte Access */
-          struct {                   /*  Bit  Access */
+#define REG_BASE_ADDR           0xE0000000
+#define REG                     (*(volatile struct st_io *) (REG_BASE_ADDR + 0xED00))
+
+#define TRUE    0x01
+#define FALSE   0x00
+
+struct st_io {                          /* struct IO    */
+    union {                             /* CPUID         */
+        uint32_t WORD;                  /*  4Byte Access */
+        uint32_t HWORD;                 /*  2Byte Access */
+        uint32_t BYTE;                  /*  Byte Access */
+          struct {                      /*  Bit  Access */
                  uint8_t B31:1; /*    Bit 32     */
                  uint8_t B30:1; /*    Bit 31     */
                  uint8_t B29:1; /*    Bit 30     */
@@ -54,8 +60,5 @@ struct st_io {                       /* struct IO    */
 
     uint32_t M0PLUS;                  /*         */
 };             
-
-#define REG_BASE_ADDR           0xE0000000
-#define REG                     (*(volatile struct st_io *) (REG_BASE_ADDR + 0xED00))
 
 #endif /* __COMMON_H__ */
