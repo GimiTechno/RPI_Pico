@@ -1,0 +1,13 @@
+# Target labels
+ PioasmBuild
+# Source files and their labels
+/home/fyuto/pico/dev/build/CMakeFiles/PioasmBuild
+/home/fyuto/pico/dev/build/CMakeFiles/PioasmBuild.rule
+/home/fyuto/pico/dev/build/CMakeFiles/PioasmBuild-complete.rule
+/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule
+/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule
+/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule
+/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule
+/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule
+/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule
+/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/fyuto/pico/dev/build/CMakeFiles/PioasmBuild"
+		},
+		{
+			"file" : "/home/fyuto/pico/dev/build/CMakeFiles/PioasmBuild.rule"
+		},
+		{
+			"file" : "/home/fyuto/pico/dev/build/CMakeFiles/PioasmBuild-complete.rule"
+		},
+		{
+			"file" : "/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule"
+		},
+		{
+			"file" : "/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule"
+		},
+		{
+			"file" : "/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule"
+		},
+		{
+			"file" : "/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule"
+		},
+		{
+			"file" : "/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule"
+		},
+		{
+			"file" : "/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule"
+		},
+		{
+			"file" : "/home/fyuto/pico/dev/build/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"PioasmBuild"
+		],
+		"name" : "PioasmBuild"
+	}
+}
