@@ -1,4 +1,4 @@
-# 【RPI_Pico(非公開:開発用)】
+# 【RPI_Pico(公開:開発用)】
  
 個人でのRaspberry Pi Picoの開発Gitリポジトリ
  
